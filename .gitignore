@@ -1,0 +1,35 @@
+# Python virtual environments
+Preprocessing_env/
+Forcasting_env/
+anomaly_env/
+data_ingestion_env/
+
+
+# Add any other environment folder names if they exist
+# e.g., venv/, .venv/, env/ if you use those standard names inside service folders
+
+# General Python ignores
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.log.*
+
+# IDE / Editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# If you have build artifacts or distribution folders
+# build/
+# dist/
+# *.egg-info/
+
+# If you have any sensitive files like .env with credentials (better to use .env.example)
+# .env
