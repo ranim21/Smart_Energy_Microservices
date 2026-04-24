@@ -1,15 +1,29 @@
-# PFE Microservices Project
+# Energy Forecasting & Anomaly Detection
 
-This project implements a microservices architecture for [briefly describe what it does, e.g., energy consumption forecasting and anomaly detection].
+> End-to-end ML pipeline for real-time energy 
+> consumption analysis · Sofiatech · 2025
 
-## Services
-- **Preprocessing Service:** Handles data cleaning, transformation, and preparation.
-- **Forecasting Service:** Predicts future energy consumption using an LSTM model.
-- **Anomaly Detection Service:** Detects anomalies in energy data using K-Means clustering.
-- (Add other services if any)
+## 🔍 Problem
+Energy consumption anomalies and unpredictable 
+demand patterns lead to unnecessary costs and 
+operational inefficiencies.
 
-## Setup
-Instructions on how to set up and run each service (e.g., create virtual environments, install dependencies from requirements.txt).
+## 💡 Solution
+A complete ML pipeline combining time-series 
+forecasting and autoencoder-based anomaly detection, 
+fed by real-time API data streams.
 
-## Usage
-How to interact with the services (e.g., API endpoints, sample requests).
+## 📊 Results
+| Model | R² | MAE | RMSE |
+|-------|-----|-----|------|
+| Bidirectional LSTM ✅ | 0.95 | 6,750 | 7,019 |
+| ARIMA | 0.94 | 7,500 | 12,000 |
+| Naive Forecast | -0.49 | 8,448 | 14,728 |
+
+## 🛠️ Stack
+Python · LSTM · ARIMA · Autoencoder · 
+Plotly · Docker · FastAPI · Scikit-learn
+
+## 🚀 How to run
+pip install -r requirements.txt
+python orchestrator.py
